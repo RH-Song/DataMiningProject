@@ -1,0 +1,6 @@
+11 buy a computer for 1
+12 buy a cup of coffee for 3
+13 buy a ipad for 14
+14 buy a ipod for 15
+15 buy a bottle of water for 6
+11 buy a cup for 1
