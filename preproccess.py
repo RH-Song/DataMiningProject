@@ -10,8 +10,12 @@ def readTrainFile(filename, userList):
             if key in wordsInLine:
                 indexOfKey = wordsInLine.index(key)
                 user = wordsInLine[indexOfKey + 1]
-                indexOfbuy = wordsInLine.index('buy')
-                item = wordsInLine[indexOfbuy + 2]
+                if 'of' in wordsInLine:
+                    indexOfbuy = wordsInLine.index('of')
+                    item = wordsInLine[indexOfbuy + 1]
+                else:
+                    indexOfbuy = wordsInLine.index('buy')
+                    item = wordsInLine[indexOfbuy + 2]
                 userList.append((str(user), str(item)))
 
 def printList(l):
